@@ -21,8 +21,9 @@ public class Simulation {
             }
             if (i.plusMinutes(5).equals(time.plusDays(30))) {
                 cars.forEach(Car::setDriveState);
+                parkingCars.setTimeOfEnd(cars, i);
             }
         }
-
+        parkingCars.takeCarsAc(cars);
     }
 }
