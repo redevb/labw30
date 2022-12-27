@@ -11,15 +11,7 @@ public class Account {
         return licensePlate;
     }
 
-    public void setLicensePlate(String licensePlate) {
-        this.licensePlate = licensePlate;
-    }
-
     public double getAccount() {
         return account;
-    }
-
-    public void setAccount(double account) {
-        this.account = account;
     }
 }
